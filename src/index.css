@@ -402,3 +402,470 @@
   border-radius: 3px;
   background-color: #ffffff;
 }
+
+/* 피드 */
+.main-wrapper .main-container .main .contents .feed-wrapper .feed {
+  margin: 0 0 15px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+/* 피드 헤더 */
+.main-wrapper .main-container .main .contents .feed-wrapper .feed .feed-header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 16px 16px 16px 16px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-header
+  .user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-header
+  .user-profile
+  .thumbnail
+  img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 12px 0 0;
+  border-radius: 50%;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-header
+  .user-profile
+  .nickname
+  span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-header
+  .user-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-header
+  .user-tab
+  button {
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0 0 0;
+  padding: 0 16px 0 16px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .tabs
+  .left-tab
+  button:first-child {
+  padding: 8px 8px 8px 0;
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .tabs
+  .left-tab
+  button {
+  padding: 8px 8px 8px 8px;
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .tabs
+  .right-tab
+  button {
+  padding: 8px 0 8px 8px;
+  cursor: pointer;
+}
+
+/* 좋아요 개수 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .like-length {
+  padding: 0 16px 0 16px;
+  margin: 0 0 6px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .like-length
+  .like-btn {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 피드 내용 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .description-wrapper {
+  padding: 0 16px 0 16px;
+  margin: 0 0 7px 0;
+  font-size: 14px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .description-wrapper
+  .nickname {
+  color: #262626;
+  font-weight: 600;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .description-wrapper
+  .description {
+  overflow-wrap: break-word;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .description-wrapper
+  .more {
+  color: #8e8e8e;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .description-wrapper
+  .more
+  button {
+  cursor: pointer;
+}
+
+/* 댓글 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments {
+  padding: 0 16px 0 16px;
+  font-size: 14px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comments-length {
+  margin: 0 0 7px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comments-length
+  .length {
+  color: #8e8e8e;
+}
+
+/* 댓글 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comment-lists
+  .lists
+  .list {
+  margin: 0 0 7px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comment-lists
+  .lists
+  .list
+  .comment-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comment-lists
+  .lists
+  .list
+  .comment-info
+  .info
+  .nickname
+  a {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .comment-lists
+  .lists
+  .list
+  .comment-info
+  .like-btn
+  button {
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .since {
+  margin: 0 0 7px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comments
+  .since
+  a {
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+/* 댓글창 */
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comment-area {
+  display: flex;
+  align-items: center;
+  height: 53px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comment-area
+  .comment-form {
+  width: 100%;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comment-area
+  .comment-form
+  form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comment-area
+  form
+  .text-comment {
+  height: 18px;
+  font-weight: 400;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .feed-content-wrapper
+  .content
+  .comment-area
+  form
+  button {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.3;
+}
