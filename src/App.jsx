@@ -1,7 +1,8 @@
 import React from 'react';
+import SignPage from './pages/SignPage';
 
 function App() {
-  return <div>Setup</div>;
+  return <SignPage />;
 }
 
 export default App;
