@@ -974,3 +974,318 @@
   cursor: pointer;
   opacity: 0.3;
 }
+
+/* 추천 */
+.main-wrapper .main-container .main .recommend-wrapper {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.main-wrapper .main-container .main .recommend-wrapper .recommend-container {
+  position: fixed;
+  max-width: 293px;
+  width: 100%;
+}
+
+/* 헤더 */
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 23px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info
+  .profile-page {
+  width: 60px;
+  height: 60px;
+  margin: 0 17px 0 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info
+  .profile-page
+  img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 100%;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info
+  .detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info
+  .detail
+  a {
+  margin: 0 0 5px 0;
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .user-info
+  .detail
+  span {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommends
+  span {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommends
+  a {
+  color: #262626;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 추천인 */
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 32px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender:last-child {
+  margin: 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  .profile {
+  display: flex;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  .profile
+  img {
+  width: 32px;
+  height: 32px;
+  margin: 0 12px 0 0;
+  border-radius: 100%;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  .profile
+  .recommender-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  .profile
+  .recommender-info
+  .nickname {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  .profile
+  .recommender-info
+  .message {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .recommenders
+  .recommender
+  button {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 추천 푸터 */
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper {
+  font-size: 11px;
+  font-weight: 400;
+  color: #c7c7c7;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper
+  .footers
+  .nav-lists {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+  line-height: 18px;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper
+  .footers
+  .nav-lists
+  .list {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper
+  .footers
+  .nav-lists
+  .list::after {
+  content: '\00B7';
+  margin: 0 0.25em 0 0.25em;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper
+  .footers
+  .nav-lists
+  .list:last-child::after {
+  content: '';
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .recommend-wrapper
+  .recommend-container
+  .footer-wrapper
+  .footers
+  span {
+  text-transform: uppercase;
+}
