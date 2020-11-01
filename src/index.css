@@ -490,6 +490,111 @@
   cursor: pointer;
 }
 
+/* 캐러셀 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .carousel {
+  display: flex;
+  max-height: 768px;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .carousel
+  img {
+  min-width: 614px;
+  width: 614px;
+  object-fit: contain;
+}
+
+/* 버튼 */
+
+/* 다음 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .next {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 16px 8px;
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .next
+  .next-image {
+  height: 30px;
+  width: 30px;
+  background: url('./images/instagram-images.png') no-repeat;
+  background-position: -162px -98px;
+}
+
+/* 이전 */
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 16px 8px;
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .contents
+  .feed-wrapper
+  .feed
+  .carousel-wrapper
+  .prev
+  .prev-image {
+  height: 30px;
+  width: 30px;
+  background: url('./images/instagram-images.png') no-repeat;
+  background-position: -130px -98px;
+}
+
 .main-wrapper
   .main-container
   .main
