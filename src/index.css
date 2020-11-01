@@ -23,3 +23,219 @@
   margin: 0 0 0 -44px;
   background: url('./images/device.png') no-repeat;
 }
+
+/* 로그인 Form */
+
+.global-wrapper .main-wrapper .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  height: 618px;
+  margin: 0 5px 0 -15px;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 33px 0 10px 0;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container h1 {
+  height: 51px;
+  width: 175px;
+  margin: 22px auto 12px;
+  background: url('./images/instagram-images.png') no-repeat;
+  background-position: 0 -130px;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 0 0;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container form input {
+  height: 28px;
+  padding: 4px 8px 4px 8px;
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  form
+  input[type='submit'] {
+  height: 30px;
+  margin: 0 0 19px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  background-color: #bbe0fc;
+  cursor: pointer;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  form
+  input:first-child {
+  margin: 0 0 6px 0;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container .line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 29px 0;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container .line .left-border,
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  .line
+  .right-border {
+  width: 104px;
+  height: 1px;
+  background-color: #dbdbdb;
+  transform: translateY(5px);
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container .line .or {
+  margin: 0px 18px 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container .facebook {
+  width: 100%;
+  text-align: center;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  .facebook
+  .facebook-login-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 21px auto;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  .facebook
+  .facebook-login-btn
+  span {
+  display: inline-block;
+  color: #385185;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .form-container
+  .facebook
+  .facebook-login-btn
+  .facebook-logo {
+  height: 16px;
+  width: 16px;
+  margin: 0 8px 0 0;
+  background: url('./images/instagram-images.png') no-repeat;
+  background-position: -414px -259px;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .form-container .find-password {
+  margin: 0 0 11px 0;
+  color: #00376b;
+  text-align: center;
+  font-size: 12px;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .sign-up-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  margin: 0 0 22px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .sign-up-wrapper .sign-up {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .sign-up-wrapper .sign-up span {
+  color: #262626;
+  font-weight: 200;
+  padding: 0 3px 0 0;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .sign-up-wrapper .sign-up a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .download-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .download-app p {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 22px 0;
+  font-size: 14px;
+}
+
+.global-wrapper .main-wrapper .form-wrapper .download-app .image-container {
+  display: flex;
+  height: 40px;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .download-app
+  .image-container
+  a:first-child {
+  margin: 0 8px 0 0;
+}
+
+.global-wrapper
+  .main-wrapper
+  .form-wrapper
+  .download-app
+  .image-container
+  a
+  img {
+  width: 136px;
+  height: 40px;
+}
