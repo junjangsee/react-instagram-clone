@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../Footer';
+import Footer from '../Footer';
 
 class Recommend extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class Recommend extends React.Component {
         <div className='recommend-container'>
           <div className='user-info'>
             <a className='profile-page' href={`/${nickname}`}>
-              <Image src={thumbnail} />
+              <img src={thumbnail} />
             </a>
             <div className='detail'>
               <a href={`/${nickname}`}>{nickname}</a>
@@ -26,7 +26,7 @@ class Recommend extends React.Component {
               {recommenders.map((recommender, index) => (
                 <div key={index} className='recommender'>
                   <div className='profile'>
-                    <Image src={recommender.thumbnail} />
+                    <img src={recommender.thumbnail} />
                     <div className='recommender-info'>
                       <span className='nickname'>{recommender.nickname}</span>
                       <span className='message'>회원님을 팔로우합니다</span>

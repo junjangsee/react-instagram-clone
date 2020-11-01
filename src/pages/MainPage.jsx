@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Story from '../components/main/Story';
 import FeedContainer from '../containers/main/FeedContainer';
+import RecommendContainer from '../containers/main/RecommendContainer';
 import profile from '../shared/__mocks__/profile';
 
 class MainPage extends React.Component {
@@ -18,6 +19,7 @@ class MainPage extends React.Component {
                   <FeedContainer />
                 </div>
               </div>
+              <RecommendContainer />
             </div>
           </div>
         </div>
