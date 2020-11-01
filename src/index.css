@@ -368,3 +368,37 @@
   height: 100%;
   border-radius: 50%;
 }
+
+/* Container */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.main-wrapper .main-container {
+  max-width: 945px;
+  width: 935px;
+}
+
+.main-wrapper .main-container .main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 84px 0 0 0;
+}
+
+.main-wrapper .main-container .main .contents {
+  width: 614px;
+  margin: 0 28px 0 0;
+}
+
+/* Story */
+.main-wrapper .main-container .main .story-wrapper {
+  height: 118px;
+  margin: 0 0 24px 0;
+  padding: 16px 0 16px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
