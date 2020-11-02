@@ -1,8 +1,24 @@
 import React from 'react';
 import Carousel from '../../shared/Carousel';
 import Icon from '../Icon';
+import Button from '../Button';
 
 class Feed extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onToggle = this.onToggle.bind(this);
+  }
+
+  state = {
+    heart: false,
+    save: false,
+  };
+
+  onToggle(event) {
+    const { className } = event.currentTarget.children[0];
+    this.setState((state) => (state[className] = !state[className]));
+  }
+
   render() {
     const {
       thumbnail,
@@ -27,9 +43,9 @@ class Feed extends React.Component {
               </a>
             </div>
             <div className='user-tab'>
-              <button type='button'>
+              <Button>
                 <Icon type='option' width={16} height={16} />
-              </button>
+              </Button>
             </div>
           </div>
           <Carousel images={images} startIndex={0} />
@@ -37,27 +53,39 @@ class Feed extends React.Component {
             <div className='content'>
               <div className='tabs'>
                 <div className='left-tab'>
-                  <button className='like-btn' type='button'>
-                    <Icon type='heart' width={24} height={24} />
-                  </button>
-                  <button className='comment-btn' type='button'>
+                  <Button className='like-btn' onClick={this.onToggle}>
+                    <Icon
+                      type='heart'
+                      className='heart'
+                      isToggle={this.state.heart}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
+                  <Button className='comment-btn'>
                     <Icon type='comment' width={24} height={24} />
-                  </button>
-                  <button className='share-btn' type='button'>
+                  </Button>
+                  <Button className='share-btn'>
                     <Icon type='share' width={24} height={24} />
-                  </button>
+                  </Button>
                 </div>
                 <div className='right-tab'>
                   <span className='pictures-length'></span>
-                  <button className='save-btn' type='button'>
-                    <Icon type='save' width={24} height={24} />
-                  </button>
+                  <Button className='save-btn' onClick={this.onToggle}>
+                    <Icon
+                      type='save'
+                      className='save'
+                      isToggle={this.state.save}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
                 </div>
               </div>
               <div className='like-length'>
-                <button className='like-btn' type='button'>
+                <Button className='like-btn'>
                   <span>좋아요 {likes.length}개</span>
-                </button>
+                </Button>
               </div>
               <div className='description-wrapper'>
                 <a className='nickname' href=''>
@@ -67,7 +95,7 @@ class Feed extends React.Component {
                 <span className='description'>{content}</span>
                 &nbsp;
                 <span className='more'>
-                  <button type='button'>더보기</button>
+                  <Button>더보기</Button>
                 </span>
               </div>
               <div className='comments'>
@@ -91,9 +119,9 @@ class Feed extends React.Component {
                             <span className='comment'>{comment.comment}</span>
                           </div>
                           <div className='like-btn'>
-                            <button type='button'>
+                            <Button>
                               <Icon type='like' width={12} height={12} />
-                            </button>
+                            </Button>
                           </div>
                         </div>
                       </li>
@@ -114,7 +142,7 @@ class Feed extends React.Component {
                       placeholder='댓글 달기...'
                       autoComplete='off'
                       autoCorrect='off'></textarea>
-                    <button type='button'>게시</button>
+                    <Button>게시</Button>
                   </form>
                 </div>
               </div>
