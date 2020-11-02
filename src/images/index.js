@@ -8,6 +8,8 @@ import direct from './direct.svg';
 import direct_active from './direct_active.svg';
 import explore from './explore.svg';
 import explore_active from './explore_active.svg';
+import feed from './feed.svg';
+import feed_active from './feed_active.svg';
 import heart from './heart.svg';
 import heart_active from './heart_active.svg';
 import like from './like.svg';
@@ -16,6 +18,9 @@ import save from './save.svg';
 import save_active from './save_active.svg';
 import setting from './setting.svg';
 import trans from './trans.svg';
+import option from './option.svg';
+import share from './share.svg';
+import close from './close.svg';
 
 export {
   device,
@@ -28,6 +33,8 @@ export {
   direct_active,
   explore,
   explore_active,
+  feed,
+  feed_active,
   heart,
   heart_active,
   like,
@@ -36,4 +43,7 @@ export {
   save_active,
   setting,
   trans,
+  option,
+  share,
+  close,
 };
