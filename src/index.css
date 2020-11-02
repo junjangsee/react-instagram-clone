@@ -1289,3 +1289,153 @@
   span {
   text-transform: uppercase;
 }
+
+/* 프로필 페이지 */
+
+/* 프로필 */
+.main-wrapper .main-container .main .profile-wrapper {
+  width: 100%;
+  margin: 0 0 43px 0;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile {
+  display: flex;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile .thumbnail {
+  padding: 0 65px 0 65px;
+  margin: 0 34px 0 0;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile .thumbnail img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #dbdbdb;
+  border-radius: 100%;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile .info {
+  width: 100%;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile .info .tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .tabs
+  .nickname {
+  margin: 0 20px 0 0;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .tabs
+  .edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 13px 0 0;
+  padding: 7px 9px 7px 9px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .tabs
+  .edit
+  a {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .tabs
+  .options {
+  width: 24px;
+  height: 24px;
+}
+
+.main-wrapper .main-container .main .profile-wrapper .profile .info .statuses {
+  margin: 0 0 25px 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .statuses
+  .status {
+  display: flex;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .statuses
+  .status
+  div {
+  display: flex;
+  margin: 0 40px 0 0;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .statuses
+  .status
+  div
+  dd {
+  font-weight: 600;
+}
+
+.main-wrapper
+  .main-container
+  .main
+  .profile-wrapper
+  .profile
+  .info
+  .description
+  h1 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}

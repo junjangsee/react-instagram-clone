@@ -21,6 +21,7 @@ import trans from './trans.svg';
 import option from './option.svg';
 import share from './share.svg';
 import close from './close.svg';
+import options from './options.svg';
 
 export {
   device,
@@ -46,4 +47,5 @@ export {
   option,
   share,
   close,
+  options,
 };
