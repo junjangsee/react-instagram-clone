@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../../shared/Carousel';
 import Icon from '../Icon';
 
 class Feed extends React.Component {
@@ -10,7 +11,7 @@ class Feed extends React.Component {
       content,
       comments,
       date,
-      children,
+      images,
     } = this.props;
 
     return (
@@ -31,7 +32,7 @@ class Feed extends React.Component {
               </button>
             </div>
           </div>
-          {children}
+          <Carousel images={images} startIndex={0} />
           <div className='feed-content-wrapper'>
             <div className='content'>
               <div className='tabs'>
