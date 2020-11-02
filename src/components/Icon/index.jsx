@@ -27,7 +27,7 @@ import {
 
 class Icon extends React.Component {
   render() {
-    const { type, isToggle = false, width = 22, height = 22 } = this.props;
+    const { type, className, isToggle, width = 22, height = 22 } = this.props;
     let src = '';
     let typeString = `${type}${isToggle ? '_active' : ''}`;
 
@@ -73,6 +73,7 @@ class Icon extends React.Component {
         break;
       case 'feed_active':
         src = feed_active;
+        break;
       case 'like':
         src = like;
         break;
@@ -102,7 +103,9 @@ class Icon extends React.Component {
         break;
     }
 
-    return <img src={src} width={width} height={height} />;
+    return (
+      <img src={src} className={className} width={width} height={height} />
+    );
   }
 }
 
