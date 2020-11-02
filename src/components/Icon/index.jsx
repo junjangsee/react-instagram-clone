@@ -23,6 +23,7 @@ import {
   option,
   share,
   close,
+  options,
 } from '../../images';
 
 class Icon extends React.Component {
@@ -100,6 +101,9 @@ class Icon extends React.Component {
         break;
       case 'close':
         src = close;
+        break;
+      case 'options':
+        src = options;
         break;
     }
 
