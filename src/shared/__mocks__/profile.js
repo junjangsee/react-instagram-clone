@@ -11,7 +11,7 @@ const profile = {
       title: '코딩 중',
       description: '어려움의 연속이다.',
       thumbnail:
-        'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24283C3858F778CA2E',
+        'https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
       date: '2020-09-28',
       likes: 124,
       comments: [
@@ -48,7 +48,7 @@ const profile = {
       title: '코딩 중2',
       description: '어려움의 연속이다2.',
       thumbnail:
-        'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24283C3858F778CA2E',
+        'https://images.unsplash.com/photo-1604397118384-9073b80595a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
       date: '2020-09-25',
       likes: 11,
       comments: [
@@ -85,7 +85,7 @@ const profile = {
       title: '코딩 중3',
       description: '어려움의 연속이다3.',
       thumbnail:
-        'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24283C3858F778CA2E',
+        'https://images.unsplash.com/photo-1604367078108-3ed095682132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
       date: '2020-05-25',
       likes: 1,
       comments: [
@@ -123,7 +123,7 @@ const profile = {
       title: '코딩 중4',
       description: '어려움의 연속이다4.',
       thumbnail:
-        'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24283C3858F778CA2E',
+        'https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
       date: '2020-06-11',
       likes: 112,
       comments: [

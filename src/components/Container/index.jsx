@@ -31,6 +31,9 @@ class Container extends React.Component {
       case 'main':
         Element = tag;
         break;
+      case 'article':
+        Element = tag;
+        break;
       case 'nav':
         Element = tag;
         break;

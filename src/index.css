@@ -1530,3 +1530,38 @@
   color: #8e8e8e;
   padding: 0 0 0 6px;
 }
+
+.main-wrapper
+  .main-container
+  .profile-container
+  .posts-wrapper
+  .posts-container
+  .post-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 28px;
+}
+
+.main-wrapper
+  .main-container
+  .profile-container
+  .posts-wrapper
+  .posts-container
+  .post-container
+  .post {
+  width: 293px;
+  height: 293px;
+}
+
+.main-wrapper
+  .main-container
+  .profile-container
+  .posts-wrapper
+  .posts-container
+  .post
+  a
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
