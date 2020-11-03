@@ -1,8 +1,9 @@
 import React from 'react';
+import Container from '../Container';
 
 class Device extends React.Component {
   render() {
-    return <div className='device'>{this.props.children}</div>;
+    return <Container className='device'>{this.props.children}</Container>;
   }
 }
 

@@ -1,43 +1,47 @@
 import React from 'react';
 import Icon from './Icon';
+import Container from './Container';
+import Text from './Text';
+import Image from './Image';
+import Button from './Button';
 
 class Header extends React.Component {
   render() {
     const { profile } = this.props;
 
     return (
-      <header className='main-header'>
-        <div className='header-wrapper'>
-          <div className='logo'>
-            <img src='https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png' />
-          </div>
-          <div className='search'>
-            <span className='search-image'></span>
-            <span className='search-word'>검색</span>
-          </div>
-          <div className='tabs-wrapper'>
-            <div className='tabs'>
-              <button className='home-button' type='button'>
+      <Container tag='header' className='main-header'>
+        <Container className='header-wrapper'>
+          <Container className='logo'>
+            <Image src='https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png' />
+          </Container>
+          <Container className='search'>
+            <Text className='search-image'></Text>
+            <Text className='search-word'>검색</Text>
+          </Container>
+          <Container className='tabs-wrapper'>
+            <Container className='tabs'>
+              <Button className='home-button'>
                 <Icon type='home' isToggle={true} />
-              </button>
-              <button className='share-button' type='button'>
+              </Button>
+              <Button className='share-button'>
                 <Icon type='direct' />
-              </button>
-              <button className='explore-button' type='button'>
+              </Button>
+              <Button className='explore-button'>
                 <Icon type='explore' />
-              </button>
-              <button className='heart-button' type='button'>
+              </Button>
+              <Button className='heart-button'>
                 <Icon type='feed' />
-              </button>
-              <button className='profile-button' type='button'>
-                <div className='image'>
-                  <img src={profile.thumbnail} />
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+              </Button>
+              <Button className='profile-button'>
+                <Container className='image'>
+                  <Image src={profile.thumbnail} />
+                </Container>
+              </Button>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
     );
   }
 }

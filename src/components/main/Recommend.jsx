@@ -1,47 +1,49 @@
 import React from 'react';
 import Footer from '../Footer';
+import Button from '../Button';
+import Container from '../Container';
+import Image from '../Image';
+import Text from '../Text';
 
 class Recommend extends React.Component {
   render() {
     const { nickname, name, thumbnail, recommenders } = this.props;
 
     return (
-      <div className='recommend-wrapper'>
-        <div className='recommend-container'>
-          <div className='user-info'>
+      <Container className='recommend-wrapper'>
+        <Container className='recommend-container'>
+          <Container className='user-info'>
             <a className='profile-page' href={`/${nickname}`}>
-              <img src={thumbnail} />
+              <Image src={thumbnail} />
             </a>
-            <div className='detail'>
+            <Container className='detail'>
               <a href={`/${nickname}`}>{nickname}</a>
-              <span>{name}</span>
-            </div>
-          </div>
-          <div className='recommends'>
-            <span>회원님을 위한 추천</span>
+              <Text>{name}</Text>
+            </Container>
+          </Container>
+          <Container className='recommends'>
+            <Text>회원님을 위한 추천</Text>
             <a href='/explore/people'>모두 보기</a>
-          </div>
-          <div className='recommender-wrapper'>
-            <div className='recommenders'>
+          </Container>
+          <Container className='recommender-wrapper'>
+            <Container className='recommenders'>
               {recommenders.map((recommender, index) => (
-                <div key={index} className='recommender'>
-                  <div className='profile'>
-                    <img src={recommender.thumbnail} />
-                    <div className='recommender-info'>
-                      <span className='nickname'>{recommender.nickname}</span>
-                      <span className='message'>회원님을 팔로우합니다</span>
-                    </div>
-                  </div>
-                  <button className='follow-btn' type='button'>
-                    팔로우
-                  </button>
-                </div>
+                <Container key={index} className='recommender'>
+                  <Container className='profile'>
+                    <Image src={recommender.thumbnail} />
+                    <Container className='recommender-info'>
+                      <Text className='nickname'>{recommender.nickname}</Text>
+                      <Text className='message'>회원님을 팔로우합니다</Text>
+                    </Container>
+                  </Container>
+                  <Button className='follow-btn'>팔로우</Button>
+                </Container>
               ))}
-            </div>
-          </div>
+            </Container>
+          </Container>
           <Footer className='footer-wrapper' />
-        </div>
-      </div>
+        </Container>
+      </Container>
     );
   }
 }

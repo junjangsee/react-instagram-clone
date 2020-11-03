@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from './Button';
+import Image from './Image';
+import Container from './Container';
 
 class Carousel extends React.Component {
   state = {
@@ -43,21 +46,21 @@ class Carousel extends React.Component {
   render() {
     return (
       <>
-        <div className='carousel-wrapper'>
+        <Container className='carousel-wrapper'>
           <div
             className='carousel'
             style={{ transform: this.state.translate3d }}>
             {this.state.images.map((image, index) => (
-              <img key={index} src={image.src} />
+              <Image key={index} src={image.src} />
             ))}
           </div>
-          <button className='prev' type='button' onClick={this.state.onPrev}>
-            <div className='prev-image'></div>
-          </button>
-          <button className='next' type='button' onClick={this.state.onNext}>
-            <div className='next-image'></div>
-          </button>
-        </div>
+          <Button className='prev' onClick={this.state.onPrev}>
+            <Container className='prev-image'></Container>
+          </Button>
+          <Button className='next' onClick={this.state.onNext}>
+            <Container className='next-image'></Container>
+          </Button>
+        </Container>
       </>
     );
   }
