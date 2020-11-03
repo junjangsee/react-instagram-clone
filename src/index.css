@@ -1292,33 +1292,63 @@
 
 /* 프로필 페이지 */
 
+.main-wrapper .main-container .profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 84px 0 0 0;
+}
+
 /* 프로필 */
-.main-wrapper .main-container .main .profile-wrapper {
+.main-wrapper .main-container .profile-container .profile-wrapper {
   width: 100%;
   margin: 0 0 43px 0;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile {
+.main-wrapper .main-container .profile-container .profile-wrapper .profile {
   display: flex;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile .thumbnail {
+.main-wrapper
+  .main-container
+  .profile-container
+  .profile-wrapper
+  .profile
+  .thumbnail {
   padding: 0 65px 0 65px;
   margin: 0 34px 0 0;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile .thumbnail img {
+.main-wrapper
+  .main-container
+  .profile-container
+  .profile-wrapper
+  .profile
+  .thumbnail
+  img {
   width: 150px;
   height: 150px;
   border: 1px solid #dbdbdb;
   border-radius: 100%;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile .info {
+.main-wrapper
+  .main-container
+  .profile-container
+  .profile-wrapper
+  .profile
+  .info {
   width: 100%;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile .info .tabs {
+.main-wrapper
+  .main-container
+  .profile-container
+  .profile-wrapper
+  .profile
+  .info
+  .tabs {
   display: flex;
   align-items: center;
   width: 100%;
@@ -1328,7 +1358,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1345,7 +1375,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1363,7 +1393,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1377,7 +1407,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1387,13 +1417,19 @@
   height: 24px;
 }
 
-.main-wrapper .main-container .main .profile-wrapper .profile .info .statuses {
+.main-wrapper
+  .main-container
+  .profile-container
+  .profile-wrapper
+  .profile
+  .info
+  .statuses {
   margin: 0 0 25px 0;
 }
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1404,7 +1440,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1417,7 +1453,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1430,7 +1466,7 @@
 
 .main-wrapper
   .main-container
-  .main
+  .profile-container
   .profile-wrapper
   .profile
   .info
@@ -1438,4 +1474,59 @@
   h1 {
   margin: 0 0 8px 0;
   font-weight: 600;
+}
+
+/* 탭 */
+.main-wrapper .main-container .profile-container .tab-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #dbdbdb;
+  height: 53px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.main-wrapper .main-container .profile-container .tab-wrapper .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-wrapper .main-container .profile-container .tab-wrapper .tabs .tab.on {
+  border-top: 1px solid black;
+}
+
+.main-wrapper
+  .main-container
+  .profile-container
+  .tab-wrapper
+  .tabs
+  .tab.on
+  span {
+  color: #262626;
+}
+
+.main-wrapper .main-container .profile-container .tab-wrapper .tabs .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 60px 0 0;
+  height: 100%;
+}
+
+.main-wrapper
+  .main-container
+  .profile-container
+  .tab-wrapper
+  .tabs
+  .tab:last-child {
+  margin: 0;
+}
+
+.main-wrapper .main-container .profile-container .tab-wrapper .tabs .tab span {
+  color: #8e8e8e;
+  padding: 0 0 0 6px;
 }
