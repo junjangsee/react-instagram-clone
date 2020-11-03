@@ -1,7 +1,10 @@
 import React from 'react';
-import Carousel from '../../shared/Carousel';
+import Carousel from '../Carousel';
 import Icon from '../Icon';
 import Button from '../Button';
+import Container from '../Container';
+import Image from '../Image';
+import Text from '../Text';
 
 class Feed extends React.Component {
   constructor(props) {
@@ -32,27 +35,27 @@ class Feed extends React.Component {
 
     return (
       <>
-        <div className='feed'>
-          <div className='feed-header'>
-            <div className='user-profile'>
+        <Container className='feed'>
+          <Container className='feed-header'>
+            <Container className='user-profile'>
               <a className='thumbnail' href=''>
-                <img src={thumbnail} />
+                <Image src={thumbnail} />
               </a>
               <a className='nickname' href=''>
-                <span>{nickname}</span>
+                <Text>{nickname}</Text>
               </a>
-            </div>
-            <div className='user-tab'>
+            </Container>
+            <Container className='user-tab'>
               <Button>
                 <Icon type='option' width={16} height={16} />
               </Button>
-            </div>
-          </div>
+            </Container>
+          </Container>
           <Carousel images={images} startIndex={0} />
-          <div className='feed-content-wrapper'>
-            <div className='content'>
-              <div className='tabs'>
-                <div className='left-tab'>
+          <Container className='feed-content-wrapper'>
+            <Container className='content'>
+              <Container className='tabs'>
+                <Container className='left-tab'>
                   <Button className='like-btn' onClick={this.onToggle}>
                     <Icon
                       type='heart'
@@ -68,9 +71,9 @@ class Feed extends React.Component {
                   <Button className='share-btn'>
                     <Icon type='share' width={24} height={24} />
                   </Button>
-                </div>
-                <div className='right-tab'>
-                  <span className='pictures-length'></span>
+                </Container>
+                <Container className='right-tab'>
+                  <Text className='pictures-length'></Text>
                   <Button className='save-btn' onClick={this.onToggle}>
                     <Icon
                       type='save'
@@ -80,62 +83,62 @@ class Feed extends React.Component {
                       height={24}
                     />
                   </Button>
-                </div>
-              </div>
-              <div className='like-length'>
+                </Container>
+              </Container>
+              <Container className='like-length'>
                 <Button className='like-btn'>
-                  <span>좋아요 {likes.length}개</span>
+                  <Text>좋아요 {likes.length}개</Text>
                 </Button>
-              </div>
-              <div className='description-wrapper'>
+              </Container>
+              <Container className='description-wrapper'>
                 <a className='nickname' href=''>
                   {nickname}
                 </a>
                 &nbsp;
-                <span className='description'>{content}</span>
+                <Text className='description'>{content}</Text>
                 &nbsp;
-                <span className='more'>
+                <Text className='more'>
                   <Button>더보기</Button>
-                </span>
-              </div>
-              <div className='comments'>
+                </Text>
+              </Container>
+              <Container className='comments'>
                 {comments.length >= 2 ? (
-                  <div className='comments-length'>
+                  <Container className='comments-length'>
                     <a className='length' href=''>
-                      <span>댓글 {comments.length}개 모두 보기</span>
+                      <Text>댓글 {comments.length}개 모두 보기</Text>
                     </a>
-                  </div>
+                  </Container>
                 ) : null}
-                <div className='comment-lists'>
+                <Container className='comment-lists'>
                   <ul className='lists'>
                     {comments.map((comment, index) => (
                       <li key={index} className='list'>
-                        <div className='comment-info'>
-                          <div className='info'>
-                            <span className='nickname'>
+                        <Container className='comment-info'>
+                          <Container className='info'>
+                            <Text className='nickname'>
                               <a href=''>{comment.nickname}</a>
-                            </span>
+                            </Text>
                             &nbsp;
-                            <span className='comment'>{comment.comment}</span>
-                          </div>
-                          <div className='like-btn'>
+                            <Text className='comment'>{comment.comment}</Text>
+                          </Container>
+                          <Container className='like-btn'>
                             <Button>
                               <Icon type='like' width={12} height={12} />
                             </Button>
-                          </div>
-                        </div>
+                          </Container>
+                        </Container>
                       </li>
                     ))}
                   </ul>
-                </div>
-                <div className='since'>
+                </Container>
+                <Container className='since'>
                   <a href=''>
-                    <span>{date}</span>
+                    <Text>{date}</Text>
                   </a>
-                </div>
-              </div>
-              <div className='comment-area'>
-                <div className='comment-form'>
+                </Container>
+              </Container>
+              <Container className='comment-area'>
+                <Container className='comment-form'>
                   <form action='POST'>
                     <textarea
                       className='text-comment'
@@ -144,11 +147,11 @@ class Feed extends React.Component {
                       autoCorrect='off'></textarea>
                     <Button>게시</Button>
                   </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
       </>
     );
   }

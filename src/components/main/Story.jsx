@@ -1,8 +1,9 @@
 import React from 'react';
+import Container from '../Container';
 
 class Story extends React.Component {
   render() {
-    return <div className='story-wrapper'></div>;
+    return <Container className='story-wrapper'></Container>;
   }
 }
 
