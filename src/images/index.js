@@ -22,6 +22,14 @@ import option from './option.svg';
 import share from './share.svg';
 import close from './close.svg';
 import options from './options.svg';
+import igtv from './igtv.svg';
+import igtv_active from './igtv_active.svg';
+import post from './post.svg';
+import post_active from './post_active.svg';
+import saved from './saved.svg';
+import saved_active from './saved_active.svg';
+import tag from './tag.svg';
+import tag_active from './tag_active.svg';
 
 export {
   device,
@@ -48,4 +56,12 @@ export {
   share,
   close,
   options,
+  igtv,
+  igtv_active,
+  post,
+  post_active,
+  saved,
+  saved_active,
+  tag,
+  tag_active,
 };

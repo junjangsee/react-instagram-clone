@@ -24,6 +24,14 @@ import {
   share,
   close,
   options,
+  igtv,
+  igtv_active,
+  post,
+  post_active,
+  saved,
+  saved_active,
+  tag,
+  tag_active,
 } from '../../images';
 
 class Icon extends React.Component {
@@ -104,6 +112,30 @@ class Icon extends React.Component {
         break;
       case 'options':
         src = options;
+        break;
+      case 'igtv':
+        src = igtv;
+        break;
+      case 'igtv_active':
+        src = igtv_active;
+        break;
+      case 'post':
+        src = post;
+        break;
+      case 'post_active':
+        src = post_active;
+        break;
+      case 'saved':
+        src = saved;
+        break;
+      case 'saved_active':
+        src = saved_active;
+        break;
+      case 'tag':
+        src = tag;
+        break;
+      case 'tag_active':
+        src = tag_active;
         break;
     }
 
