@@ -354,6 +354,7 @@
 }
 
 .main-header .header-wrapper .tabs-wrapper .tabs .profile-button {
+  position: relative;
   width: 22px;
   height: 22px;
 }
@@ -367,6 +368,262 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+/* 모달 */
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal {
+  position: absolute;
+  width: 230px;
+  margin-left: -180px;
+  top: 37px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .arrow {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 184px;
+  bottom: 0;
+  top: -6px;
+  transform: rotate(45deg);
+  /* box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975); */
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: default;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .change-sign,
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .logout {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  padding: 8px 16px;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  a
+  .list {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  padding: 8px 16px;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  a
+  .list:hover {
+  background-color: #fafafa;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  a
+  .list:active {
+  background-color: #efefef;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  a
+  .list
+  .icon {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 0 0;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .change-sign,
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .logout {
+  margin: 0 0 4px 0;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .change-sign
+  .icon {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 0 0;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  a
+  .list
+  .text {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  font-size: 14px;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .change-sign
+  .text {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  font-size: 14px;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .logout {
+  padding: 8px 16px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .logout:hover {
+  background-color: #fafafa;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .logout:active {
+  background-color: #efefef;
+}
+
+.main-header
+  .header-wrapper
+  .tabs-wrapper
+  .tabs
+  .profile-button
+  .modal-wrapper
+  .modal-container
+  .modal
+  .logout
+  span {
+  color: #262626;
+  font-size: 14px;
 }
 
 /* Container */

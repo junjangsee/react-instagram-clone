@@ -30,6 +30,8 @@ import saved from './saved.svg';
 import saved_active from './saved_active.svg';
 import tag from './tag.svg';
 import tag_active from './tag_active.svg';
+import profile from './profile.svg';
+import change from './change.svg';
 
 export {
   device,
@@ -64,4 +66,6 @@ export {
   saved_active,
   tag,
   tag_active,
+  profile,
+  change,
 };

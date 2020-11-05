@@ -4,8 +4,22 @@ import Container from './Container';
 import Text from './Text';
 import Image from './Image';
 import Button from './Button';
+import Modal from './Modal';
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onClickProfile = this.onClickProfile.bind(this);
+  }
+
+  state = {
+    profileToggle: false,
+  };
+
+  onClickProfile() {
+    this.setState((state) => (state.profileToggle = !state.profileToggle));
+  }
+
   render() {
     const { profile } = this.props;
 
@@ -33,9 +47,57 @@ class Header extends React.Component {
               <Button className='heart-button'>
                 <Icon type='feed' />
               </Button>
-              <Button className='profile-button'>
+              <Button className='profile-button' onClick={this.onClickProfile}>
                 <Container className='image'>
                   <Image src={profile.thumbnail} />
+                </Container>
+                <Container className='modal-wrapper'>
+                  <Modal
+                    className='modal-container'
+                    isToggle={this.state.profileToggle}>
+                    <div className='arrow'></div>
+                    <a href=''>
+                      <Container className='list'>
+                        <Container className='icon'>
+                          <Icon type='profile' width={16} height={16} />
+                        </Container>
+                        <Container className='text'>
+                          <Text>프로필</Text>
+                        </Container>
+                      </Container>
+                    </a>
+                    <a href=''>
+                      <Container className='list'>
+                        <Container className='icon'>
+                          <Icon type='save' width={16} height={16} />
+                        </Container>
+                        <Container className='text'>
+                          <Text>저장됨</Text>
+                        </Container>
+                      </Container>
+                    </a>
+                    <a href=''>
+                      <Container className='list'>
+                        <Container className='icon'>
+                          <Icon type='setting' width={16} height={16} />
+                        </Container>
+                        <Container className='text'>
+                          <Text>설정</Text>
+                        </Container>
+                      </Container>
+                    </a>
+                    <Container className='change-sign'>
+                      <Container className='icon'>
+                        <Icon type='change' width={16} height={16} />
+                      </Container>
+                      <div className='text'>
+                        <Text>계정 전환</Text>
+                      </div>
+                    </Container>
+                    <Container className='logout'>
+                      <Text>로그아웃</Text>
+                    </Container>
+                  </Modal>
                 </Container>
               </Button>
             </Container>

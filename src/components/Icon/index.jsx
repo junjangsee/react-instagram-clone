@@ -32,6 +32,8 @@ import {
   saved_active,
   tag,
   tag_active,
+  profile,
+  change,
 } from '../../images';
 
 class Icon extends React.Component {
@@ -136,6 +138,12 @@ class Icon extends React.Component {
         break;
       case 'tag_active':
         src = tag_active;
+        break;
+      case 'profile':
+        src = profile;
+        break;
+      case 'change':
+        src = change;
         break;
     }
 
