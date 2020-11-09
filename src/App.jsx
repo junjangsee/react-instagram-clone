@@ -10,6 +10,7 @@ import MainPage from './pages/MainPage';
 import ProfilePage from './pages/ProfilePage';
 import Header from './components/Header';
 import profile from './shared/__mocks__/profile';
+import PostDetailContainer from './containers/postDetail/PostDetailContainer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/sign' component={SignPage} />
           <Route path='/main/profile' component={ProfilePage} />
           <Route path='/main' component={MainPage} />
+          <Route path='/post/:id' component={PostDetailContainer} />
           <Redirect from='/' to='/main' />
         </Switch>
       </Router>

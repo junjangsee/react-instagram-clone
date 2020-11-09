@@ -5,6 +5,7 @@ import Container from './Container';
 
 class Carousel extends React.Component {
   state = {
+    width: this.props.width,
     startIndex: this.props.startIndex,
     images: this.props.images,
     carousel: null,
@@ -26,7 +27,7 @@ class Carousel extends React.Component {
       return {
         ...state,
         startIndex: (state.startIndex -= 1),
-        translate3d: `translate3d(-${614 * state.startIndex}px, 0, 0)`,
+        translate3d: `translate3d(-${state.width * state.startIndex}px, 0, 0)`,
       };
     });
   }
@@ -38,7 +39,7 @@ class Carousel extends React.Component {
       return {
         ...state,
         startIndex: (state.startIndex += 1),
-        translate3d: `translate3d(-${614 * state.startIndex}px, 0, 0)`,
+        translate3d: `translate3d(-${state.width * state.startIndex}px, 0, 0)`,
       };
     });
   }
