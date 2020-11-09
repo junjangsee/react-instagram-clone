@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '../components/Container';
-import Header from '../components/Header';
 import Profile from '../components/profile/Profile';
 import Tab from '../components/profile/Tab';
 import PostContainer from '../containers/profile/PostContainer';
@@ -10,7 +9,6 @@ class MainPage extends React.Component {
   render() {
     return (
       <>
-        <Header profile={profile} />
         <Container className='main-wrapper'>
           <Container className='main-container'>
             <Container className='profile-container'>
