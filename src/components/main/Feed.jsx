@@ -51,7 +51,7 @@ class Feed extends React.Component {
               </Button>
             </Container>
           </Container>
-          <Carousel images={images} startIndex={0} />
+          <Carousel images={images} startIndex={0} width={614} />
           <Container className='feed-content-wrapper'>
             <Container className='content'>
               <Container className='tabs'>
