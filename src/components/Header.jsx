@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Icon from './Icon';
 import Container from './Container';
 import Text from './Text';
@@ -21,21 +22,25 @@ class Header extends React.Component {
   }
 
   render() {
-    const { profile } = this.props;
+    const { profile, history } = this.props;
 
     return (
       <Container tag='header' className='main-header'>
         <Container className='header-wrapper'>
-          <Container className='logo'>
-            <Image src='https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png' />
-          </Container>
+          <Link to='/main'>
+            <Container className='logo'>
+              <Image src='https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png' />
+            </Container>
+          </Link>
           <Container className='search'>
             <Text className='search-image'></Text>
             <Text className='search-word'>검색</Text>
           </Container>
           <Container className='tabs-wrapper'>
             <Container className='tabs'>
-              <Button className='home-button'>
+              <Button
+                className='home-button'
+                onClick={() => history.push('/main')}>
                 <Icon type='home' isToggle={true} />
               </Button>
               <Button className='share-button'>
@@ -56,7 +61,7 @@ class Header extends React.Component {
                     className='modal-container'
                     isToggle={this.state.profileToggle}>
                     <div className='arrow'></div>
-                    <a href=''>
+                    <Link to='/main/profile'>
                       <Container className='list'>
                         <Container className='icon'>
                           <Icon type='profile' width={16} height={16} />
@@ -65,7 +70,7 @@ class Header extends React.Component {
                           <Text>프로필</Text>
                         </Container>
                       </Container>
-                    </a>
+                    </Link>
                     <a href=''>
                       <Container className='list'>
                         <Container className='icon'>
@@ -94,9 +99,11 @@ class Header extends React.Component {
                         <Text>계정 전환</Text>
                       </div>
                     </Container>
-                    <Container className='logout'>
-                      <Text>로그아웃</Text>
-                    </Container>
+                    <Link to='/sign'>
+                      <Container className='logout'>
+                        <Text>로그아웃</Text>
+                      </Container>
+                    </Link>
                   </Modal>
                 </Container>
               </Button>
